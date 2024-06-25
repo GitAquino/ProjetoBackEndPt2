@@ -25,7 +25,7 @@ public class OpcoesMenu {
         listaProdutos.add(novoProduto);
         proximoId++;
 
-        System.out.println("Produto cadastrado com sucesso!");
+        System.out.println("Produto cadastrado com sucesso!\n");
     }
 
     public void editarProduto() {
@@ -73,15 +73,15 @@ public class OpcoesMenu {
                     produtoEncontrado.setValor(novoValor);
                     break;
                 case 4:
-                    System.out.println("A data de cadastro não pode ser alterada diretamente.");
+                    System.out.println("A data de cadastro não pode ser alterada diretamente.\n");
                     break;
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
             }
 
-            System.out.println("Produto editado com sucesso!");
+            System.out.println("Produto editado com sucesso!\n");
         } else {
-            System.out.println("Produto não encontrado com o ID informado.");
+            System.out.println("Produto não encontrado com o ID informado.\n");
         }
     }
 
@@ -96,20 +96,20 @@ public class OpcoesMenu {
             if (listaProdutos.get(i).getId().equals(id)) {
                 listaProdutos.remove(i);
                 removido = true;
-                System.out.println("* Produto removido com sucesso!");
+                System.out.println("* Produto removido com sucesso!\n");
                 break;
             }
         }
 
         if (!removido) {
-            System.out.println("* Produto não encontrado com o ID informado.");
+            System.out.println("* Produto não encontrado com o ID informado.\n");
         }
     }
 
     public static void visualizarProdutos() {
         System.out.println("* * * * Visualizar Produtos * * * *");
         if (listaProdutos.isEmpty()) {
-            System.out.println("* Nenhum produto cadastrado.");
+            System.out.println("* Nenhum produto cadastrado.\n");
         } else {
             for (Produto produto : listaProdutos) {
                 System.out.println(produto);

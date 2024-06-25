@@ -57,8 +57,6 @@ public class Produto {
     public void setDataCadastro(LocalDate dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-
-    // Sobrescrever o método toString para formatar a exibição do produto
     @Override
     public String toString() {
         return String.format("ID: %d | Nome: %s | Quantidade: %d | Valor: %.2f | Data de Cadastro: %s",

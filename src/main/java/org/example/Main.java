@@ -39,10 +39,10 @@ public class Main {
                     opcoesMenu.visualizarProdutos();
                     break;
                 case 0:
-                    System.out.println("Saindo do sistema...");
+                    System.out.println("Saindo do sistema...\n");
                     break;
                 default:
-                    System.out.println("Opção inválida! Tente novamente.");
+                    System.out.println("Opção inválida! Tente novamente.\n");
             }
 
         } while (opcao != 0);
